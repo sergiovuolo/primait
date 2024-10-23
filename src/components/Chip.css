@@ -1,0 +1,150 @@
+.chip.pill {
+  height: 50px;
+  padding: 0 20px;
+  margin-right: 12px;
+  border-radius: 100px 100px 100px 100px;
+  border: 1px solid #d3d3dc;
+}
+
+.chip.pill.selected {
+  background-color: #1b2134;
+  border: 1px solid #1b2134;
+  color: white;
+}
+
+.chip.pill.selected:hover {
+  background-color: #343a4e;
+}
+
+.chip.pill.selected:active {
+  background-color: #585d71;
+  border: none;
+}
+
+.chip.pill.selected:focus {
+  background-color: #1b2134;
+  outline: none;
+  color: white;
+  border: none;
+  position: relative;
+}
+
+.chip.pill.selected:focus:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid #1b2134;
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+.chip.pill.not-selected:focus {
+  border: 1px solid #d3d3dc;
+  outline: none;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.chip.pill.not-selected:focus:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid #1b2134;
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+.chip.pill.not-selected {
+  background-color: white;
+  color: #1b2134;
+}
+
+.chip.pill.not-selected:hover {
+  background-color: #f6f6fa;
+}
+
+.chip.pill.not-selected:active {
+  background-color: #f6f6fa;
+}
+
+/* CHIP UNDERLINE */
+.chip.underline {
+  height: 50px;
+  padding: 10px 0;
+  margin-right: 12px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid #1b2134;
+  background: transparent;
+}
+
+.chip.underline.selected:focus {
+    outline: none;
+    position: relative;
+}
+
+.chip.underline.selected:focus:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -7px;
+    border: 2px solid #1b2134;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.chip.underline.not-selected:focus {
+    outline: none;
+    position: relative;
+    border-bottom: 3px solid #d3d3dc;
+}
+
+.chip.underline.not-selected:focus:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -7px;
+    border: 2px solid #1b2134;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.chip.underline.not-selected {
+  background-color: white;
+  color: #1b2134;
+  border-bottom: none;
+}
+
+.chip.underline.not-selected:hover {
+  border-bottom: 3px solid #d3d3dc;
+
+}
+
+.chip.underline.not-selected:active {
+  background-color: #f6f6fa;
+  border-bottom: 3px solid #d3d3dc;
+}
+
+@media screen and (max-width: 768px) {
+    .chip {
+        height: 42px;
+    }
+    .chip.pill {
+        padding: 0 12px;
+        margin-right: 8px;
+    }
+    .chip.underline {
+        margin-right: 24px;
+    }
+}

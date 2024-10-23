@@ -1,0 +1,19 @@
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+.neutral {
+  background-color: #F1F1F7;
+}
+.positive {
+  background-color: #B1FFC7;
+}
+.negative {
+  background-color: #FFBFB1;
+}
+@media screen and (max-width: 768px) {
+  .badge {
+    padding: 2px 4px;
+  }
+}
